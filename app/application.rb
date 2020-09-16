@@ -1,8 +1,9 @@
 class Application
+  @@items = [Item.new("Candy", 4.25), Item.new("Fruit", 3.75)]
 
 def call(env)
   resp = Rack::Response.new
-  req = Rack::Response.new(env)
+  req = Rack::Request.new(env)
 
   if req.path=="/items"
     resp.write "Here are your items"
