@@ -17,6 +17,6 @@ class Application
       resp.status = 404
       resp.write "Item not available"
     end
-  end
     resp.finish
+  end
 end
