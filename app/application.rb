@@ -13,11 +13,11 @@ class Application
         resp.write "Item not available"
         resp.status = 400
       end
-    end
     else
       resp.status = 404
       resp.write "Item not available"
     end
+  end
     resp.finish
   end
 end
